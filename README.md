@@ -159,7 +159,7 @@ These are practical, safety-first SOP notes for adapting this project to an **In
 
 ### 1) Start with paperwork, permissions, and a safe test plan
 Before powering anything:
-- fly only under your organization’s flight approval process
+- fly only under your organization’s flight approval process : Here is Northeastern's Flight Permission Link "https://docs.google.com/forms/d/e/1FAIpQLSefn-FyeSzu_K19iEH1NSNligEF6hrCOWIMamKFvI3GpDdy3Q/viewform"
 - use a qualified pilot in command
 - confirm your airspace, geofence, and emergency procedures
 - test this code first in SITL and then in a controlled outdoor test area
