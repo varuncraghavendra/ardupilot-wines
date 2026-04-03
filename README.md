@@ -269,29 +269,6 @@ Use this as a quick pre-flight reminder.
 - [ ] RC/manual override available
 - [ ] Test area clear
 
-## Limitations
-
-This repository is a mission prototype, not a finished field deployment package.
-
-Known limitations:
-- no live RF sensor integration yet
-- hard-coded coordinates
-- limited logging
-- minimal configuration management
-- no mission replay or plotting utilities
-- no safety supervisor process outside the script itself
-
-## Good next improvements
-
-If you want to keep building this project, the most useful next steps are:
-
-1. connect the score function to a real modem / payload measurement stream
-2. move all mission parameters into a config file
-3. add CSV logging and map plotting
-4. add waypoint preview before arming
-5. support different polygon shapes and stop conditions
-6. add proper field-deployment documentation for the IF800 telemetry path
-
 ## Disclaimer
 
 This project can command a real aircraft. Use it only in a controlled and legally compliant environment with appropriate pilot oversight. Do not treat the current code as production-ready autonomy.
