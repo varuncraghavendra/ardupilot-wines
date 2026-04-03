@@ -1,6 +1,6 @@
 # ArduPilot based Bisection Algorithm
 
-A small Python project for flying an ArduPilot-based drone through a search pattern that progressively shrinks the search area using a **bisection-style algorithm**.
+A small Python project for flying an ArduPilot-based drone through a search pattern that progressively shrinks the search area using a **bisection algorithm**.
 
 The idea is simple: the drone samples a few points, compares the signal quality at those points, keeps the more promising region, and repeats until the area becomes small enough. In this repository, the "signal" is currently modeled with a **fake radio / simulated RSRP** function, so the code is best understood as a mission-logic prototype that can later be connected to a real measurement source.
 
