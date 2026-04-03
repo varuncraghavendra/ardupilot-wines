@@ -1,4 +1,4 @@
-# ArduPilot Bisection Search Mission
+# ArduPilot based Bisection Algorithm
 
 A small Python project for flying an ArduPilot-based drone through a search pattern that progressively shrinks the search area using a **bisection-style algorithm**.
 
