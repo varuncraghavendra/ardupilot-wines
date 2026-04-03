@@ -155,7 +155,7 @@ python3 square.py
 
 ## Standard operating procedure (SOP) for bringing this onto an Inspired Flight IF800
 
-These are practical, safety-first SOP notes for adapting this project to an **Inspired Flight IF800 Tomcat** running ArduPilot. Inspired Flight documents say the IF800 Tomcat uses ArduPilot on a **CubePilot Cube Blue H7**, and their setup workflow uses Mission Planner. citeturn925972search0turn925972search3turn925972search9
+These are practical, safety-first SOP notes for adapting this project to an **Inspired Flight IF800 Tomcat** running ArduPilot. Inspired Flight documents say the IF800 Tomcat uses ArduPilot on a **CubePilot Cube Blue H7**, and their setup workflow uses Mission Planner.
 
 ### 1) Start with paperwork, permissions, and a safe test plan
 Before powering anything:
@@ -170,7 +170,7 @@ On the IF800 side:
 - make sure the aircraft is fully assembled per Inspired Flight procedures
 - verify batteries, payload, GNSS, RC link, and telemetry link are healthy
 - confirm the autopilot firmware and parameters are the approved baseline for your aircraft
-- if you need to update aircraft firmware, Inspired Flight provides a Mission Planner based process over USB, with batteries removed during the update procedure. citeturn925972search3
+- if you need to update aircraft firmware, Inspired Flight provides a Mission Planner based process over USB, with batteries removed during the update procedure. 
 
 ### 3) Connect in Mission Planner and verify the basics
 Using Mission Planner on the laptop:
@@ -179,7 +179,7 @@ Using Mission Planner on the laptop:
 - confirm the vehicle reports the expected ArduCopter frame and flight mode support
 - review the full parameter set before changing anything
 
-ArduPilot’s own docs recommend working through the first-time setup and first-flight/tuning process before operational use. citeturn925972search15
+ArduPilot’s own docs recommend working through the first-time setup and first-flight/tuning process before operational use. 
 
 ### 4) Verify mission-critical safety settings before running custom code
 At minimum, confirm:
@@ -189,7 +189,7 @@ At minimum, confirm:
 - geofence configured and tested
 - takeoff altitude and speed limits appropriate for the site
 
-ArduPilot supports both cylindrical and polygon inclusion/exclusion fences in Copter, and these are worth enabling before guided automation tests. citeturn925972search2turn925972search11turn925972search20
+ArduPilot supports both cylindrical and polygon inclusion/exclusion fences in Copter, and these are worth enabling before guided automation tests. 
 
 ### 5) Bench-test the telemetry path with props off
 This project relies on MAVLink reaching the laptop where Python/MAVSDK is running.
@@ -206,8 +206,7 @@ The current code expects MAVSDK to receive the vehicle on:
 udpin://0.0.0.0:14540
 ```
 
-So your field setup must expose MAVLink to that endpoint, or you need to change the connection string to match your actual transport. MAVSDK supports UDP and other transports depending on how the vehicle is connected. citeturn925972search1
-
+So your field setup must expose MAVLink to that endpoint, or you need to change the connection string to match your actual transport. MAVSDK supports UDP and other transports depending on how the vehicle is connected. 
 ### 6) Use a staged validation flow on the IF800
 A good progression is:
 
@@ -247,7 +246,7 @@ After each test flight:
 - compare actual path vs intended path
 - only expand the test envelope after a clean review
 
-Mission Planner supports downloading ArduPilot dataflash logs for post-flight analysis. citeturn925972search14
+Mission Planner supports downloading ArduPilot dataflash logs for post-flight analysis. 
 
 ## Minimum field checklist
 
